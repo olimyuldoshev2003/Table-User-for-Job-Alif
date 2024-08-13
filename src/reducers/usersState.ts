@@ -198,7 +198,7 @@ const isValidEmail = (email: string): boolean => {
 };
 
 const isValidTajikPhoneNumber = (phone: string): boolean => {
-  const phoneRegex: RegExp = /^\992\d{9}$/;
+  const phoneRegex: RegExp = /^992\d{9}$/;
   const trimmedPhone: string = phone.trim(); // Remove leading and trailing whitespace
   return phoneRegex.test(trimmedPhone);
 };
