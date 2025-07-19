@@ -115,13 +115,13 @@ export const usersSlice = createSlice({
         alert("Please field all of this fields out");
       } else {
         if (!email || !isValidEmail(email)) {
-          state.formErrors.email = "Please enter a valid email address";
+          state.formErrors.email = "Please enter a valid email address!!!";
         } else {
           state.formErrors.email = "";
         }
 
         if (!phone || !isValidTajikPhoneNumber(phone)) {
-          state.formErrors.phone = "Please enter a valid email address";
+          state.formErrors.phone = "Please enter a valid tajik number phone!!!";
         } else {
           state.formErrors.phone = "";
         }
